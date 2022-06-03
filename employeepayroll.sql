@@ -15,4 +15,8 @@ select name from employee_payroll where start_date between cast('2012-09-2' as d
 
 -- adding  column gender to table
 alter table employee_payroll add gender char after name ;
-update employee_payroll set gender='M' where name='rohit' or name='punit' or name='mahi';
+update employee_payroll set gender='M' where name='rohit' or name='puhit' or name='mahi';
+update employee_payroll set gender='F' where name='neha' or name='shivpooja';
+
+-- finding sum of salary for males 
+select sum(salary) from employee_payroll where gender='M';
