@@ -20,3 +20,10 @@ update employee_payroll set gender='F' where name='neha' or name='shivpooja';
 
 -- finding sum of salary for males 
 select sum(salary) from employee_payroll where gender='M';
+
+alter table employee_payroll add phone int(10);
+alter table employee_payroll add address varchar(20) null;
+alter table employee_payroll add department varchar(20) not null;
+update employee_payroll set address='pune' where name='shivpooja';
+
+
