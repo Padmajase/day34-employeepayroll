@@ -26,4 +26,10 @@ alter table employee_payroll add address varchar(20) null;
 alter table employee_payroll add department varchar(20) not null;
 update employee_payroll set address='pune' where name='shivpooja';
 
+alter table employee_payroll add basic_pay bigint not null;
+alter table employee_payroll add deduction bigint not null;
+alter table employee_payroll add taxable_pay bigint not null;
+alter table employee_payroll add tax int(10) not null;
+
+
 
